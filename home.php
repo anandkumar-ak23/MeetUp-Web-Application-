@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-        MeetUp-Platform AK
+        MeetUp-Platform 
         </title>
     </head>
     <body>
