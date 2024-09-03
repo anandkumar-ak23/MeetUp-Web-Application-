@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+            Faculty Registration
+        </title>
+    </head>
+    <body>
+        <center>
+            <h1>Welcome to MeetUp</h1>
+            <a href="http://localhost:8888/minprowork/home.php" >Home</a>||
+        <!-- <a href="http://localhost:8888/minprowork/loginsTypes.html" >Login</a>|| -->
+        <!-- <a href="http://localhost:8888/minprowork/signup.html" >SignUp</a>|| -->
+        <!-- <a href="" >Reset Password</a>|| -->
+        <!-- <a href="" >Logout</a> -->
+            <h1>Register Now</h1>
+            <form action="finsertstd.php" method="post">
+
+                <table border="3">
+                    <tr>
+                        <td><b>Honorific: </b></td>
+                        <td><select name="fhonor">
+                            <option value="Dr.">Dr.</option>
+                            <option value="Mr.">Mr.</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="Mrs.">Mrs.</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><b>Name: </b></td>
+                        <td><input type="text" name="fname" maxlength="30" size="37"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Designation(with honors): </b></td>
+                        <td><input type="text" name="fdeg" size="37"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Work Id:</b></td>
+                        <td><input type="text" name="fid"  ></td>
+                    </tr>
+                    <tr>
+                        <td><b>Department:</b></td>
+                        <td><select  name="fdept">
+                            <option value="cse">Computer Science and Engineering</option>
+                            <option value="csm">Computer Science and Machine Learning</option>
+                            <option value="it">Information Technology</option>
+                            <option value="aids">Artificial Intelligence and DataScience</option>
+                            <option value="eee">Electrical Engineering</option>
+                            <option value="civil">Civil Engineering</option>
+                            <option value="mech">Mechanical Engineering</option>
+                            <option value="ase">AeroSpace Engineering</option>
+                            <option value="ece">Electronics and Communication Engineering</option>
+                          </select></td>
+                    </tr>
+                    <tr>
+                        <td><b>Cabin Loc:</b></td>
+                        <td><input type="text" name="cabin" size="37"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Area of Research: </b></td>
+                        <td><input type="text" name="farea" size="37"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td><input type="email"  name="fmail" size="37"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Mobile Number: </b></td>
+                        <td> <input type="number" name="fphone" maxlength="10" minlength="10" /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>Password</b></td>
+                        <td><input type="password"  name="fpwd" size="37"></td>
+                    </tr>
+                </table>
+                <br>
+                    <input type="submit" value="Create A/C" > 
+                
+            </form>
+        </center>
+    </body>
+</html>

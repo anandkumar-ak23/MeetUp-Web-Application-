@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>
+            Student Registration
+        </title>
+    </head>
+    <body>
+        <center>
+            <h1>Welcome to MeetUp</h1>
+            <a href="http://localhost:8888/minprowork/home.php" >Home</a>||
+        <!-- <a href="http://localhost:8888/minprowork/loginsTypes.html" >Login</a>|| -->
+        <!-- <a href="http://localhost:8888/minprowork/signup.html" >SignUp</a>|| -->
+        <!-- <a href="" >Reset Password</a>|| -->
+        <!-- <a href="" >Logout</a> -->
+            <h1>Register Now</h1>
+            <form action="insertstd.php" method="post">
+
+                <table border="3">
+                    <tr>
+                        <td><b>Enter Name:</b></td>
+                        <td><input type="text" name="sname" size="37"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Reg.Num:</b>
+                        </td>
+                        <td>
+                            <input type="text" minlength="10" name="roll" size="37">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Branch:</b></td>
+                        <td><select  name="branch">
+                            <option value="cse">Computer Science and Engineering</option>
+                            <option value="csm">Computer Science and Machine Learning</option>
+                            <option value="it">Information Technology</option>
+                            <option value="aids">Artificial Intelligence and DataScience</option>
+                            <option value="eee">Electrical Engineering</option>
+                            <option value="civl">Civil Engineering</option>
+                            <option value="mech">Mechanical Engineering</option>
+                            <option value="ase">AeroSpace Engineering</option>
+                            <option value="ece">Electronics and Communication Engineering</option>
+                          </select></td>
+                    </tr>
+                    <tr>
+                        <td><b>Email: </b></td>
+                        <td> <input type="email" name="mail" size="37"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Mobile Number: </b></td>
+                        <td> <input type="number" name="phone" maxlength="10" minlength="10"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Gender: </b></td>
+                        <td>
+                            <input type="radio" id="MALE" name="gender" value="MALE">
+                            <label for="MALE">MALE</label>
+                            <input type="radio" id="FEMALE" name="gender" value="FEMALE">
+                            <label for="FEMALE">FEMALE</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b> DOB:</b></td>
+                        <td><input type="text" name="dob"  size="37"> <br>Formate: (yy-mm-dd)</td>
+                    </tr>
+                    <tr>
+                        <td><b>Password</b></td>
+                        <td><input type="password" maxlength="25" name="pass" size="37"></td>
+                    </tr>
+                    
+                </table>
+                <br>
+                    <input type="submit" name="submit" value="Create A/C" > 
+                
+            </form>
+        </center>
+    </body>
+</html>
