@@ -1,23 +1,21 @@
 <html>
     <head>
         <title>Reset Password Page</title>
+        <link rel="stylesheet" type="text/css" href="student-style.css"> <!-- Include CSS -->
     </head>
     <?php
-                if(isset($_COOKIE["username"]) && isset( $_COOKIE["pwd"])){
-                    // echo "<b>user name:</b> ".$_COOKIE["username"];
-                    // echo "<center><br>"."<b>password:</b></center> ".$_COOKIE["passwordstd"];
-                ?>
+        if(isset($_COOKIE["username"]) && isset($_COOKIE["pwd"])){
+    ?>
     <body>
-        <center>
-        <h1><u>STUDENT </u></h1>
-        <h1>Welcome to MeetUp</h1>
-            <a href="http://localhost:8888/minprowork/student/main.php" >Home</a>||
-        <!-- <a href="http://localhost:8888/minprowork/loginsTypes.html" >Login</a> ||-->
-        <a href="profilestudent.php" >PROFILE</a>||
-        <a href="updatestd.php" >Update Profile</a>||
-        <!-- <a href="http://localhost:8888/minprowork/signup.html" >SignUp</a>|| -->
-        
-        <a href="logout.php" >Direct Logout</a>
+        <center class="container"> <!-- Use the container class -->
+            <h1><u>STUDENT</u></h1>
+            <h1>Welcome to MeetUp</h1>
+            <nav>
+                <a href="http://localhost:8888/minprowork/student/main.php">Home</a> ||
+                <a href="profilestudent.php">PROFILE</a> ||
+                <a href="updatestd.php">Update Profile</a> ||
+                <a href="logout.php">Direct Logout</a>
+            </nav>
             <h1>Reset Password</h1>
             <form action="pwdupdate.php" method="post">
                 <table border="3">
@@ -31,17 +29,14 @@
                     </tr>
                 </table>
                 <br>
-                <input type="submit" value="Reset" >
+                <input type="submit" value="Reset">
             </form>
-    </center>
+        </center>
     <?php
-                }
-                else {
-                    echo "<script>alert('logged out')</script>";
-
-                    echo "<script>window.location.href = 'http://localhost:8888/minprowork/home.php';</script>";
-              
-                }
-            ?>
-</body>
+        } else {
+            echo "<script>alert('logged out')</script>";
+            echo "<script>window.location.href = 'http://localhost:8888/minprowork/home.php';</script>";
+        }
+    ?>
+    </body>
 </html>

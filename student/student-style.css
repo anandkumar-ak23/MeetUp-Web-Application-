@@ -1,0 +1,199 @@
+/* General Page Layout */
+#main-container {
+    background-color: #f0f8ff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* Header */
+header h1 {
+    color: #ffffff;
+    background-color: #1e90ff;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 36px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Links */
+#navigation {
+    margin-top: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #1e90ff;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4682b4;
+    transform: scale(1.05);
+}
+
+/* Form Section */
+#form-section {
+    margin-top: 30px;
+}
+
+#form-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#form-section table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#form-section td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#form-section input[type="text"],
+#form-section input[type="email"],
+#form-section input[type="number"],
+#form-section input[type="password"],
+#form-section select {
+    width: 95%; /* Set width for input fields */
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Submit Button */
+.action-button {
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #4169e1;
+    transform: scale(1.05);
+}
+
+.action-button:active {
+    background-color: #1e90ff;
+    transform: scale(0.98);
+}
+
+/* Validation Error Styling */
+#error-message {
+    color: #ff0000;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
+    display: none;
+    padding: 10px;
+    background-color: #ffe6e6;
+    border: 1px solid #ff9999;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main-container {
+        width: 90%;
+    }
+
+    #form-section table {
+        width: 100%;
+    }
+}
+
+/* Student Theme Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the main content */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+nav {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: #007BFF; /* Primary color for links */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Add margin for better spacing */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+}
+
+input[type="submit"],
+.action-button {
+    background-color: #28a745; /* Green button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+.action-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
