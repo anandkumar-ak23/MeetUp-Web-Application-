@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+}
+
+header h1 {
+    color: #ffffff;
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+#navigation {
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #2390d3;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+#actions {
+    margin-bottom: 30px;
+}
+
+#actions b {
+    font-size: 18px;
+    color: #333;
+}
+
+.action-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #2390d3;
+    transform: scale(1.05);
+}
+
+.action-button:active {
+    background-color: #388e3c;
+    transform: scale(0.98);
+}
+
+#user-count {
+    margin-top: 30px;
+}
+
+#user-count table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 60%;
+    background-color: #f9f9f9;
+}
+
+#user-count th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+}
+
+#user-count th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#user-count td {
+    text-align: center;
+}
+
+input[type="text"] {
+    background-color: #e9ecef;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    color: #333;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+    #main-container {
+        width: 90%;
+    }
+
+    #user-count table {
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+}
+/* SignUp Page Styles */
+
+#signup-options {
+    margin-top: 20px;
+}
+
+#signup-options h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#signup-options a {
+    text-decoration: none;
+}
+
+#signup-options input[type="button"],
+#signup-options input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#signup-options input[type="button"]:hover,
+#signup-options input[type="submit"]:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#signup-options input[type="button"]:active,
+#signup-options input[type="submit"]:active {
+    background-color: #2390d3;
+    transform: scale(0.98);
+}
+
+/* General Link Hover Effects */
+.nav-link:hover {
+    color: #388e3c;
+    transform: scale(1.05);
+}
+/* links.html */
+
+#main-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+header h1 {
+    color: #ffffff;
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 36px;
+}
+
+#navigation {
+    margin-top: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #2390d3;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main-container {
+        width: 90%;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+}
+/* Login Page Styles */
+
+#login-options {
+    margin-top: 30px;
+}
+
+#login-options h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#login-options form {
+    margin-bottom: 20px;
+}
+
+#login-options input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 200px;
+}
+
+#login-options input[type="submit"]:hover {
+    background-color: #2390d3;
+    transform: scale(1.05);
+}
+
+#login-options input[type="submit"]:active {
+    background-color: #2390d3;
+    transform: scale(0.98);
+}
+
+/* General Navigation and Link Styles (already added) */

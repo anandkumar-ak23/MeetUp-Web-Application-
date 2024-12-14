@@ -1,25 +1,29 @@
 <html>
     <head>
-        <title>
-            Type of Logins
-        </title>
+        <title>Type of Logins</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <center>
-            <h1>Welcome to MeetUp</h1>
-            <a href="http://localhost:8888/minprowork/home.php" >Home</a>||
-        <!-- <a href="http://localhost:8888/minprowork/loginsTypes.html" >Login</a>|| -->
-        <a href="http://localhost:8888/minprowork/signup.html" >SignUp</a>||
-        <!-- <a href="" >Reset Password</a>|| -->
-        <!-- <a href="" >Logout</a> -->
-            <h1>Login as</h1><br>
-            <form action="student/stdlogin.html">
-                <input type="submit" value="Student Login" name="stdlogin" >
-            </form>
-            <form action="faculty/Flogin.html">
-                <br><br>
-                <input type="submit" value="Faculty Login" name="facultylogin" >
-            </form>
-        </center>
+        <div id="main-container">
+            <header>
+                <h1>Login - MeetUp</h1>
+            </header>
+
+            <div id="navigation">
+                <a class="nav-link" href="http://localhost:8888/minprowork/home.php">Home</a>||
+                <a class="nav-link" href="http://localhost:8888/minprowork/signup.html">SignUp</a>
+            </div>
+
+            <div id="login-options">
+                <h2>Login as</h2>
+                <form action="student/stdlogin.html">
+                    <input class="action-button" type="submit" value="Student Login" name="stdlogin">
+                </form>
+                <form action="faculty/Flogin.html">
+                    <br>
+                    <input class="action-button" type="submit" value="Faculty Login" name="facultylogin">
+                </form>
+            </div>
+        </div>
     </body>
 </html>
